@@ -21,31 +21,71 @@
     />
   </mdb-carousel-item>
 </mdb-carousel>
-<!-- Buttons trigger collapse -->
+<!--the announcement-->
 <div style="background:#EF5B5B ">
-  <a class="ms-2" (click)="basicCollapse.toggle()" role="button" [attr.aria-expanded]="!basicCollapse.collapsed" aria-controls="collapseExample" style="color: white">
+  <a class="ms-2" (click)="announcementCollapse.toggle()" role="button"
+     [attr.aria-expanded]="!announcementCollapse.collapsed"
+     aria-controls="collapseAnnouncement" style="color: white">
     DELIVERY DELAY NOTICE :</a>
-  <div style="color: white" id="collapseExample" mdbCollapse #basicCollapse="mdbCollapse">
+  <div style="color: white" id="collapseAnnouncement" mdbCollapse #announcementCollapse="mdbCollapse">
     <div class="mb-2 ms-2 me-2">
       In light with announcement on 26th October 2020 with regards of the extension of Conditional Movement Control Oder
-      (CMCO) at Kuala Lumpur, Selangor and Putrajaya,please be informed that there will be a delay in delivery for ALL orders made between
+      (CMCO) at Kuala Lumpur, Selangor and Putrajaya,please be informed that there will be a delay in delivery for ALL
+      orders made between
       <span style="font-weight: 600;">14th October till 9th November 2020</span>.
     </div>
   </div>
 </div>
-<div class="container-fluid">
-  <div class="col-12 mt-2 mb-2 form-group" >
-  <div class="row">
-    <div class="col-4 pr-0">
-      <hr style="border: 0.5px dashed #000000;">
+<!--the category-->
+<div>
+  <a role="button" (click)="categoryCollapse.toggle()" [attr.aria-expanded]="!categoryCollapse.collapsed"
+     aria-controls="collapseCategory">
+    <div class="container-fluid">
+      <div class="col-12 mt-2 mb-2 form-group">
+        <div class="row">
+          <div class="col-4 pr-0">
+            <hr style="border: 0.5px dashed #000000;">
+          </div>
+          <div class="col-4 mt-2">
+            <p class="cat-title">Categories</p>
+          </div>
+          <div class="col-4 pl-0">
+            <hr style="border: 0.5px dashed #000000;">
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-4 mt-2">
-      <p class="cat-title">Top Selling</p>
-    </div>
-    <div class="col-4 pl-0">
-      <hr style="border: 0.5px dashed #000000;">
+  </a>
+  <div style="color: white" id="collapseCategory" mdbCollapse #categoryCollapse="mdbCollapse">
+    <div class="mb-2 ms-2 me-2" style="background: aquamarine">
+      In light with announcement on 26th October 2020 with regards of the extension of Conditional Movement Control Oder
+      (CMCO) at Kuala Lumpur, Selangor and Putrajaya,please be informed that there will be a delay in delivery for ALL
+      orders made between
+      <span style="font-weight: 600;">14th October till 9th November 2020</span>.
     </div>
   </div>
 </div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="card col-6">
+      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="btn btn-primary">Button</a>
+      </div>
+    </div>
+    <div class="card col-6">
+      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/184.webp" class="card-img-top" alt="Fissure in Sandstone"/>
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#!" class="btn btn-primary">Button</a>
+      </div>
+    </div>
+  </div>
 </div>
+
+
 
