@@ -6,3 +6,35 @@
   text-align: center;
   color: #000000;
 }
+.product-title{
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+  width: 9em; /* the element needs a fixed width (in px, em, %, etc) */
+  overflow: hidden; /* make sure it hides the content that overflows */
+  white-space: nowrap; /* don't break the line */
+  text-overflow: ellipsis; /* give the beautiful '...' effect */
+}
+.product-price{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #E3B23C;
+}
+.home-view-more-btn{
+  height: 28px;
+  //left: 15px;
+  //right: 14px;
+  //bottom: 15px;
+  background: #00644C;
+  border-radius: 2px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  display: flex;
+  align-items: center !important;
+  text-align: center !important;
+  color: #FFFFFF;
+}
